@@ -1,6 +1,7 @@
 # Monorepo Template
 
 ## Features:
+
 1. Shared eslint config
 2. Shared prettier config
 3. Husky precommit hook
