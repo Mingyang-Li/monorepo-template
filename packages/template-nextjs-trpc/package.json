@@ -6,7 +6,6 @@
     "build": "next build",
     "db:push": "prisma db push",
     "dev": "next dev",
-    "postinstall": "prisma generate",
     "start": "next start"
   },
   "dependencies": {

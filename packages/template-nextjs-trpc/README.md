@@ -1,1 +1,1 @@
-# Template - Nest.js + tRPC
+# Template - Next.js + tRPC
