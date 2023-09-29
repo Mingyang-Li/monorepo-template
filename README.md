@@ -8,8 +8,8 @@
 4. Absolute import alias for each workspace package. We use `@`
 5. Dedicated `src` folder for each package which helps separating code from config files
 6. Template: Next.js + tRPC + Zod + Tailwind
-7. Template: NestJS + Zod
+7. Template: NestJS + Zod + Neverthrow
 8. Template: Remix?
-9. Templatye: Azure-functions?
+9. Templatte: Azure Functions?
 10. Template: Node + Express?
-11. Template: React = Vite?
+11. Template: React + Vite?
