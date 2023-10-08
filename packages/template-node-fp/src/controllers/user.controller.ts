@@ -31,5 +31,5 @@ export const createUser = wrapHandlerWithValidation({
 });
 
 export const createUser_test = (req: Request, res: Response) => {
-  return res.status(201).json({ msg: "test" })
-}
+  return res.status(201).json({ msg: 'test' });
+};
