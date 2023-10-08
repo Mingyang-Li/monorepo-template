@@ -1,9 +1,6 @@
 import { RequestHandler } from 'express';
 import { ZodSchema } from 'zod';
 
-export const HttpMethods = ["POST", "GET", "PUT", "DELETE"] as const;
-export type HttpMethod = (typeof HttpMethods)[number]
-
 export type InferOptionalType<T extends ZodSchema<any, any> | undefined> =
   T extends undefined ? never : ZodSchema<Exclude<T, undefined>>;
 
