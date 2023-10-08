@@ -1,15 +1,6 @@
 import { RequestHandler } from 'express';
 import { ZodSchema } from 'zod';
 
-type EventContext<Body, QueryStringParameters, PathParameters, Auth> = {
-  body: Body;
-  queryStringParameters: QueryStringParameters;
-  pathParameters: PathParameters;
-} & (Auth extends true ? { userId: string } : Record<string, never>);
-
-export type APIGatewayEvent<Body, QueryStringParameters, PathParameters, Auth> =
-  EventContext<Body, QueryStringParameters, PathParameters, Auth>;
-
 export type InferOptionalType<T extends ZodSchema<any, any> | undefined> =
   T extends undefined ? never : ZodSchema<Exclude<T, undefined>>;
 
