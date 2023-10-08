@@ -202,12 +202,18 @@ importers:
 
   packages/template-node-fp:
     dependencies:
+      '@t3-oss/env-nextjs':
+        specifier: ^0.6.0
+        version: 0.6.1(typescript@5.2.2)(zod@3.21.4)
       express:
         specifier: ^4.18.2
         version: 4.18.2
       typescript:
         specifier: ^5.1.6
         version: 5.2.2
+      zod:
+        specifier: ^3.21.4
+        version: 3.21.4
     devDependencies:
       '@types/express':
         specifier: ^4.17.17
