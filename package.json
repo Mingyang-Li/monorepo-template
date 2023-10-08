@@ -8,16 +8,9 @@
     "prepare": "husky install",
     "precommit": "lint-staged --relative"
   },
-  "lint-staged": {
-    "*.{ts, tsx, js, jsx}": [
-      "pnpm format",
-      "pnpm lint"
-    ]
-  },
   "devDependencies": {
     "eslint": "^8.48.0",
     "husky": "^8.0.0",
-    "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
     "tsconfig": "workspace:*",
     "turbo": "latest"
