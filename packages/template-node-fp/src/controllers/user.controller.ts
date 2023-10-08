@@ -1,8 +1,9 @@
-import { z } from "zod";
+import { z } from 'zod';
 import { StatusCodes } from 'http-status-codes';
-import * as HTTP from "../common/http-error";
-import * as UserService from "../services/user.service";
-import { wrapHandlerWithValidation } from "../common/validation-wrapper";
+import * as HTTP from '../common/http-error';
+import * as UserService from '../services/user.service';
+import { wrapHandlerWithValidation } from '../common/validation-wrapper';
+import { Request, Response } from 'express';
 
 export const CreateUserReqBodySchema = z.object({
   email: z.string(),
@@ -18,13 +19,17 @@ export const createUser = wrapHandlerWithValidation({
       return HTTP.sendResponse({
         res,
         statusCode: StatusCodes.INTERNAL_SERVER_ERROR,
-        message: "Failed to create user"
-      })
+        message: 'Failed to create user',
+      });
     }
     return HTTP.sendResponse({
       res,
       statusCode: StatusCodes.CREATED,
-      message: "User created"
-    })
-  }
-})
+      body: newUser,
+    });
+  },
+});
+
+export const createUser_test = (req: Request, res: Response) => {
+  return res.status(201).json({ msg: "test" })
+}

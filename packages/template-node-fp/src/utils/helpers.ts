@@ -6,5 +6,5 @@
  * @returns string
  */
 export const hashPassword = (s: string) => {
-  return s.split("").reverse().join("");
-}
+  return s.split('').reverse().join('');
+};

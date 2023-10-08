@@ -1,13 +1,13 @@
-import { Response } from "express";
-import { StatusCodes } from 'http-status-codes';
+import { Response } from 'express';
 
 type SendResponseArgs = {
   res: Response;
   statusCode: number;
-  message: string;
-}
+  body?: Record<string, any>;
+  message?: string;
+};
 
 export const sendResponse = (args: SendResponseArgs) => {
-  const { res, statusCode, message } = args;
-  res.status(statusCode).json({ message })
-}
+  const { res, statusCode, body, message } = args;
+  res.status(statusCode).json(body ? body : message);
+};

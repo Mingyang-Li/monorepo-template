@@ -35,12 +35,11 @@ export const wrapHandlerWithValidation =
   async (req, res, next) => {
     // Schema Validation
     try {
-      req.query = await querySchema.parse(req.query);
+      // req.query = await querySchema.parse(req.query);
       req.body = await bodySchema.parse(req.body);
-      req.params = await pathSchema.parse(req.params);
+      // req.params = await pathSchema.parse(req.params);
     } catch (error) {
-      const body = (error as any).errors.join(', ');
-      res.status(400).json(body);
+      res.status(400).json();
       return next(error);
     }
 
