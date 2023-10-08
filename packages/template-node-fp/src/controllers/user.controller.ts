@@ -3,7 +3,6 @@ import { StatusCodes } from 'http-status-codes';
 import * as HTTP from '../common/http-error';
 import * as UserService from '../services/user.service';
 import { wrapHandlerWithValidation } from '../common/validation-wrapper';
-import { Request, Response } from 'express';
 
 export const CreateUserReqBodySchema = z.object({
   email: z.string(),
