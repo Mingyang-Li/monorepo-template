@@ -9,7 +9,6 @@ export const wrapHandlerWithValidation =
     BodySchema extends ZodSchema<any, any> | undefined = undefined,
     QuerySchema extends ZodSchema<any, any> | undefined = undefined,
     ParamsSchema extends ZodSchema<any, any> | undefined = undefined,
-    Auth extends boolean | undefined = true,
   >({
     handler,
     querySchema,
@@ -23,7 +22,6 @@ export const wrapHandlerWithValidation =
       InferOptionalType<QuerySchema>,
       { userId: string }
     >;
-    isAuthEnabled?: Auth;
     querySchema?: QuerySchema;
     bodySchema?: BodySchema;
     pathSchema?: ParamsSchema;
