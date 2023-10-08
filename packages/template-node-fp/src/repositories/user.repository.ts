@@ -1,7 +1,7 @@
 import { CreateUserReqBody } from '../controllers/user.controller';
 import * as Helpers from '../utils/helpers';
 import * as crypto from 'crypto';
-import { err, ok, ResultAsync, Result } from 'neverthrow';
+import { err, ok, ResultAsync } from 'neverthrow';
 
 export type CreateUserResBody = CreateUserReqBody & {
   id: string;
