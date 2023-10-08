@@ -1,6 +1,7 @@
 import { env } from './env';
 import * as express from 'express';
 import { Request, Response } from 'express';
+import * as C from "./controllers/user.controller";
 
 const app = express();
 const port = env.PORT;
@@ -13,6 +14,6 @@ app.get('/api/health', (req: Request, res: Response) => {
 
 app.listen(port, () => {
   console.log(
-    `Server is running on port ${port}. Access it via http://localhost:${port}/api/health`,
+    `Server is running on port ${JSON.stringify(C.CreateUserReqBodySchema)}. Access it via http://localhost:${port}/api/health`,
   );
 });
