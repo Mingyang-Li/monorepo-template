@@ -1,6 +1,9 @@
 import { RequestHandler } from 'express';
 import { ZodSchema } from 'zod';
 
+export const HttpMethods = ["POST", "GET", "PUT", "DELETE"] as const;
+export type HttpMethod = (typeof HttpMethods)[number]
+
 export type InferOptionalType<T extends ZodSchema<any, any> | undefined> =
   T extends undefined ? never : ZodSchema<Exclude<T, undefined>>;
 
@@ -35,11 +38,17 @@ export const wrapHandlerWithValidation =
   async (req, res, next) => {
     // Schema Validation
     try {
-      // req.query = await querySchema.parse(req.query);
-      req.body = await bodySchema.parse(req.body);
-      // req.params = await pathSchema.parse(req.params);
+      if (req.query && querySchema) {
+        req.query = await querySchema.parse(req.query);
+      }
+      if (req.body && bodySchema) {
+        req.body = await bodySchema.parse(req.body);
+      }
+      if (req.params && pathSchema) {
+        req.params = await pathSchema.parse(req.param);
+      }
     } catch (error) {
-      res.status(400).json();
+      res.status(400).json(error);
       return next(error);
     }
 

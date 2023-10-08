@@ -25,7 +25,7 @@ export const createUser = wrapHandlerWithValidation({
     return HTTP.sendResponse({
       res,
       statusCode: StatusCodes.CREATED,
-      body: newUser,
+      body: newUser.value,
     });
   },
 });
