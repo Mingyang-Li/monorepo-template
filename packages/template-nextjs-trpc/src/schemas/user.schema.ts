@@ -11,4 +11,3 @@ export const CreateUserArgsSchema = z.object({
   lastName: z.string({ required_error: 'Please provide last name' }),
 });
 export type CreateUserArgs = z.infer<typeof CreateUserArgsSchema>;
-
