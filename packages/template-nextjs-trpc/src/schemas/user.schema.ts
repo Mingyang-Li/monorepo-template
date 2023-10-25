@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const CreateUserArgs = z.object({
+export const CreateUserArgsSchema = z.object({
   email: z
     .string({ required_error: 'Please provide an email' })
     .email('Please provide a valid email'),
@@ -10,3 +10,5 @@ export const CreateUserArgs = z.object({
   firstName: z.string({ required_error: 'Please provide first name' }),
   lastName: z.string({ required_error: 'Please provide last name' }),
 });
+export type CreateUserArgs = z.infer<typeof CreateUserArgsSchema>;
+
