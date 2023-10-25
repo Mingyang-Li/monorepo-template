@@ -1,21 +1,33 @@
 generator client {
-  provider = "prisma-client-js"
-
-  // Fixes issue of PrismaClient not found in monorepo setup
-  // Issue: https://github.com/prisma/prisma/issues/6603
-  output = "../../../node_modules/.prisma/client"
+    provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = env("DATABASE_URL")
+    provider = "sqlite"
+    url      = env("DATABASE_URL")
 }
 
 model Example {
-  id        Int      @id @default(autoincrement())
-  name      String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+    id        Int      @id @default(autoincrement())
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+    archived   Boolean   @default(false)
+    archivedAt DateTime?
 
-  @@index([name])
+    name      String
+
+    @@index([name])
+}
+
+model User {
+    id         String    @id @default(uuid())
+    createdAt  DateTime  @default(now())
+    updatedAt  DateTime  @updatedAt
+    archived   Boolean   @default(false)
+    archivedAt DateTime?
+
+    email     String
+    password  String
+    firstName String
+    lastName  String
 }
