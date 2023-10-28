@@ -185,9 +185,6 @@ importers:
 
   packages/template-node-fp:
     dependencies:
-      '@t3-oss/env-nextjs':
-        specifier: ^0.6.0
-        version: 0.6.1(typescript@5.2.2)(zod@3.21.4)
       body-parser:
         specifier: ^1.20.2
         version: 1.20.2
