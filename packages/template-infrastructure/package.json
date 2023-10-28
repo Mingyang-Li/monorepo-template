@@ -1,13 +1,15 @@
 {
-    "name": "test",
-    "main": "src/index.ts",
-    "scripts": {},
-    "devDependencies": {
-        "@types/node": "^16"
-    },
-    "dependencies": {
-        "@pulumi/pulumi": "^3.0.0",
-        "@pulumi/azure-native": "^2.0.0",
-        "tsconfig": "workspace:*"
-    }
+  "name": "template-infrastructure",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^16"
+  },
+  "dependencies": {
+    "@pulumi/pulumi": "^3.0.0",
+    "@pulumi/azure-native": "^2.0.0",
+    "tsconfig": "workspace:*"
+  }
 }

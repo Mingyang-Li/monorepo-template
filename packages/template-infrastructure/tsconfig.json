@@ -1,18 +1,17 @@
 {
-    "compilerOptions": {
-        "strict": true,
-        "outDir": "bin",
-        "target": "es2016",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "experimentalDecorators": true,
-        "pretty": true,
-        "noFallthroughCasesInSwitch": true,
-        "noImplicitReturns": true,
-        "forceConsistentCasingInFileNames": true
-    },
-    "files": [
-        "src/index.ts"
-    ]
+  "extends": "tsconfig/base.json",
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "pretty": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "files": ["src/index.ts"],
+  "exclude": ["node_modules"]
 }

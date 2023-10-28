@@ -1,16 +1,11 @@
 {
-  "extends": [
-    "tsconfig/nextjs.json",
-    "tsconfig/base.json"
-  ],
+  "extends": ["tsconfig/nextjs.json", "tsconfig/base.json"],
   "compilerOptions": {
     "strictNullChecks": true,
     "preserveSymlinks": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     },
     "esModuleInterop": true,
     "moduleResolution": "node",
@@ -24,7 +19,5 @@
     "**/*.cjs",
     "**/*.mjs"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
