@@ -7,6 +7,7 @@
 3. Husky precommit hook
 4. Absolute import alias for each workspace package. We use `@`
 5. Dedicated `src` folder for each package which helps separating code from config files
-6. Template: Next.js + tRPC + Zod + Tailwind
-7. Template: NestJS + Zod + Neverthrow
-8. Template: Node + Express (Functional Programming style)
+6. Template - frontend: Next.js + tRPC + Zod + Tailwind
+7. Template - backend - Object-Oriented Programming: NestJS + Zod
+8. Template - backend - Functional Programming: Node + Express + Neverthrow
+9. Template - Infrastructure-as-code - Pulumi + Azure + Typescript
