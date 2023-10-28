@@ -1,8 +1,7 @@
 {
     "name": "test",
     "main": "src/index.ts",
-    "scripts": {
-    },
+    "scripts": {},
     "devDependencies": {
         "@types/node": "^16"
     },
