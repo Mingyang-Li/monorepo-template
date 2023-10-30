@@ -2,6 +2,7 @@
   "name": "template-infrastructure",
   "main": "src/index.ts",
   "scripts": {
+    "build": "tsc --build",
     "lint": "tsc"
   },
   "devDependencies": {
