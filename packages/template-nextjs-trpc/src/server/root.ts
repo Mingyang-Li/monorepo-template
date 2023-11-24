@@ -1,5 +1,5 @@
-import { ExampleRoutes } from '@/server/api/routers/example.routes';
-import { createTRPCRouter } from '@/server/api/trpc';
+import { ExampleRoutes } from '@/server/routes/example.routes';
+import { createTRPCRouter } from '@/server/trpc';
 
 /**
  * This is the primary router for your server.

@@ -1,4 +1,4 @@
-import { createTRPCRouter, publicProcedure } from '@/server/api/trpc';
+import { createTRPCRouter, publicProcedure } from '@/server/trpc';
 import { CreateUserArgsSchema } from '@/schemas/user.schema';
 
 export const UserRoutes = createTRPCRouter({

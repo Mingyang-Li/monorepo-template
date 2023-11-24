@@ -37,6 +37,3 @@ next-env.d.ts
 
 # turbo
 .turbo
-
-# SQLite DB file
-/prisma/db.sqlite
