@@ -26,7 +26,7 @@
     "reflect-metadata": "0.1.13",
     "rxjs": "7.8.1",
     "tsconfig": "workspace:*",
-    "zod": "3.21.4"
+    "zod": "3.22.4"
   },
   "devDependencies": {
     "@nestjs/cli": "10.0.0",
