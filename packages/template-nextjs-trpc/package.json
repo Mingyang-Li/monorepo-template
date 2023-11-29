@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "0.6.0",
-    "@tanstack/react-query": "4.32.6",
+    "@tanstack/react-query": "5.10.0",
     "@trpc/client": "10.37.1",
     "@trpc/next": "10.37.1",
     "@trpc/react-query": "10.37.1",
