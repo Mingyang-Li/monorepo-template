@@ -24,11 +24,13 @@ importers:
         specifier: latest
         version: 1.10.16
 
+  packages/docker-postgresql: {}
+
   packages/template-infrastructure:
     dependencies:
       '@pulumi/azure-native':
-        specifier: 2.0.0
-        version: 2.0.0
+        specifier: 2.20.0
+        version: 2.20.0
       '@pulumi/pulumi':
         specifier: 3.0.0
         version: 3.0.0
@@ -1369,9 +1371,8 @@ packages:
     resolution: {integrity: sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==}
     dev: false
 
-  /@pulumi/azure-native@2.0.0:
-    resolution: {integrity: sha512-Mc2yfv2I6uDTy3tDOiSXMlARNSaX/7+qw/Zxvq10jEny8wC7Tc0xCP/FMS/TETtHm1R8TDKTJ0s0md8695aLgw==}
-    requiresBuild: true
+  /@pulumi/azure-native@2.20.0:
+    resolution: {integrity: sha512-PT4jwabe8LDkmcfWviUqfQUp1jDdl4uc4dW5BrMAu2eFiuUrsOTwMI4DqBz1uw9Uc+uOedddVdXyKQK/vI0ZNw==}
     dependencies:
       '@pulumi/pulumi': 3.0.0
     dev: false
