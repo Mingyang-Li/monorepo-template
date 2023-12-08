@@ -167,8 +167,8 @@ importers:
         specifier: 8.4.31
         version: 8.4.31
       tailwindcss:
-        specifier: 3.3.3
-        version: 3.3.3
+        specifier: 3.3.6
+        version: 3.3.6
       tsconfig:
         specifier: workspace:*
         version: link:../../shared/tsconfig
@@ -7136,8 +7136,8 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /tailwindcss@3.3.3:
-    resolution: {integrity: sha512-A0KgSkef7eE4Mf+nKJ83i75TMyq8HqY3qmFIJSWy8bNt0v1lG7jUcpGpoTFxAwYcWOphcTBLPPJg+bDfhDf52w==}
+  /tailwindcss@3.3.6:
+    resolution: {integrity: sha512-AKjF7qbbLvLaPieoKeTjG1+FyNZT6KaJMJPFeQyLfIp7l82ggH1fbHJSsYIvnbTFQOlkh+gBYpyby5GT1LIdLw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
