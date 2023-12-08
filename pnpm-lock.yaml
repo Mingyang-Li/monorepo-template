@@ -26,6 +26,8 @@ importers:
 
   packages/docker-postgresql: {}
 
+  packages/docker-postgresql: {}
+
   packages/template-infrastructure:
     dependencies:
       '@pulumi/azure-native':
@@ -155,8 +157,8 @@ importers:
         specifier: 18.16.0
         version: 18.16.0
       '@types/react':
-        specifier: 18.2.20
-        version: 18.2.20
+        specifier: 18.2.42
+        version: 18.2.42
       '@types/react-dom':
         specifier: 18.2.7
         version: 18.2.7
@@ -1764,11 +1766,11 @@ packages:
   /@types/react-dom@18.2.7:
     resolution: {integrity: sha512-GRaAEriuT4zp9N4p1i8BDBYmEyfo+xQ3yHjJU4eiK5NDa1RmUZG+unZABUTK4/Ox/M+GaHwb6Ow8rUITrtjszA==}
     dependencies:
-      '@types/react': 18.2.20
+      '@types/react': 18.2.42
     dev: true
 
-  /@types/react@18.2.20:
-    resolution: {integrity: sha512-WKNtmsLWJM/3D5mG4U84cysVY31ivmyw85dE84fOCk5Hx78wezB/XEjVPWl2JTZ5FkEeaTJf+VgUAUn3PE7Isw==}
+  /@types/react@18.2.42:
+    resolution: {integrity: sha512-c1zEr96MjakLYus/wPnuWDo1/zErfdU9rNsIGmE+NV71nx88FG9Ttgo5dqorXTu/LImX2f63WBP986gJkMPNbA==}
     dependencies:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
