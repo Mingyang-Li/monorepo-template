@@ -34,16 +34,16 @@ importers:
       '@pulumi/pulumi':
         specifier: 3.0.0
         version: 3.0.0
+    devDependencies:
+      '@types/node':
+        specifier: '16'
+        version: 16.18.68
       eslint-config-custom:
         specifier: workspace:*
         version: link:../../shared/eslint-config-custom
       tsconfig:
         specifier: workspace:*
         version: link:../../shared/tsconfig
-    devDependencies:
-      '@types/node':
-        specifier: '16'
-        version: 16.18.68
 
   packages/template-nestjs:
     dependencies:

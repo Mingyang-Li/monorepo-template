@@ -5,12 +5,12 @@
     "build": "tsc --build",
     "lint": "eslint ."
   },
-  "devDependencies": {
-    "@types/node": "16"
-  },
   "dependencies": {
     "@pulumi/pulumi": "3.0.0",
-    "@pulumi/azure-native": "2.21.1",
+    "@pulumi/azure-native": "2.21.1"
+  },
+  "devDependencies": {
+    "@types/node": "16",
     "tsconfig": "workspace:*",
     "eslint-config-custom": "workspace:*"
   }
