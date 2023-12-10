@@ -163,6 +163,9 @@ importers:
       autoprefixer:
         specifier: 10.4.14
         version: 10.4.14(postcss@8.4.31)
+      eslint-config-custom:
+        specifier: workspace:*
+        version: link:../../shared/eslint-config-custom
       postcss:
         specifier: 8.4.31
         version: 8.4.31
