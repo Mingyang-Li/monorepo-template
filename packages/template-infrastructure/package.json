@@ -3,7 +3,7 @@
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc --build",
-    "lint": "tsc"
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@types/node": "16"
@@ -11,6 +11,7 @@
   "dependencies": {
     "@pulumi/pulumi": "3.0.0",
     "@pulumi/azure-native": "2.21.1",
-    "tsconfig": "workspace:*"
+    "tsconfig": "workspace:*",
+    "eslint-config-custom": "workspace:*"
   }
 }

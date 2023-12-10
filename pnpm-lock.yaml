@@ -34,6 +34,9 @@ importers:
       '@pulumi/pulumi':
         specifier: 3.0.0
         version: 3.0.0
+      eslint-config-custom:
+        specifier: workspace:*
+        version: link:../../shared/eslint-config-custom
       tsconfig:
         specifier: workspace:*
         version: link:../../shared/tsconfig
