@@ -12,7 +12,7 @@
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
-    "lint": "tsc",
+    "lint": "eslint .",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
@@ -29,6 +29,8 @@
     "zod": "3.22.3"
   },
   "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
     "@nestjs/cli": "10.2.1",
     "@nestjs/schematics": "10.0.0",
     "@nestjs/testing": "10.2.10",

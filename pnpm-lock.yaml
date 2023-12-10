@@ -87,6 +87,9 @@ importers:
       '@types/supertest':
         specifier: 2.0.12
         version: 2.0.12
+      eslint-config-custom:
+        specifier: workspace:*
+        version: link:../../shared/eslint-config-custom
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)(ts-node@10.9.1)
