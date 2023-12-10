@@ -29,8 +29,8 @@ importers:
   packages/template-infrastructure:
     dependencies:
       '@pulumi/azure-native':
-        specifier: 2.21.1
-        version: 2.21.1
+        specifier: 2.21.2
+        version: 2.21.2
       '@pulumi/pulumi':
         specifier: 3.0.0
         version: 3.0.0
@@ -1421,8 +1421,8 @@ packages:
     resolution: {integrity: sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==}
     dev: false
 
-  /@pulumi/azure-native@2.21.1:
-    resolution: {integrity: sha512-hToXoK5Oi1UOWApHNOzqN0zqRNYnigb8qv548IDjQ5C7mAnhGR3/NDaA+PzYDlL2ij2DR8SXYg0VGykEYmS9+g==}
+  /@pulumi/azure-native@2.21.2:
+    resolution: {integrity: sha512-gYSQrIbGUbOcFItxT2ZpzKQPHBVf90ISppkRfvK+2c3lEJk5OW+4MS/2IAwRrKtVS1GnDtwte7jlhYtOL0GuCA==}
     dependencies:
       '@pulumi/pulumi': 3.0.0
     dev: false
