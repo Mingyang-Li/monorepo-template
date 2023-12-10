@@ -1,5 +1,4 @@
 import { z } from 'zod';
-require('dotenv').config();
 
 export const EnvSchema = z.object({
   DATABASE_URL: z.string().default('NONE'),

@@ -33,7 +33,7 @@ export const createUser = async (
   // handle result & map errors
   const putResult = await ResultAsync.fromPromise(
     formUser(args),
-    (error: any) => {
+    (error: unknown) => {
       return error;
     },
   );

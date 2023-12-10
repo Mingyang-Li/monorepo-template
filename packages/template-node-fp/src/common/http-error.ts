@@ -3,7 +3,7 @@ import { Response } from 'express';
 type SendResponseArgs = {
   res: Response;
   statusCode: number;
-  body?: Record<string, any>;
+  body?: Record<string, unknown>;
   message?: string;
 };
 
