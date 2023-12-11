@@ -1,21 +1,20 @@
 {
-    "compilerOptions": {
-      // Important for azure function
-      "esModuleInterop": true,
-      "outDir": "dist",
-      "module": "commonjs",
-      "target": "es6",
-  
-      // Important for TypeGraphQL to run
-      "emitDecoratorMetadata": true,
-      "experimentalDecorators": true,
-  
-      // Standard project config
-      "declaration": false,
-      "baseUrl": ".",
-      "paths": {
-        "@/*": ["./src/*"]
-      }
+  "compilerOptions": {
+    // Important for azure function
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "module": "commonjs",
+    "target": "es6",
+
+    // Important for TypeGraphQL to run
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+
+    // Standard project config
+    "declaration": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
     }
   }
-  
+}

@@ -1,7 +1,7 @@
 import { Service } from 'typedi';
 
 @Service()
-export class UserRepository {
+export class AccountRepository {
   public async findOne() {
     return;
   }
