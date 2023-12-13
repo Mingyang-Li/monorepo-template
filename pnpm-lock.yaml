@@ -24,6 +24,8 @@ importers:
         specifier: latest
         version: 1.11.1
 
+  packages/docker-mongodb: {}
+
   packages/docker-postgresql: {}
 
   packages/template-azure-functions-graphql:

@@ -1,13 +1,13 @@
-# 🐘 Local Database - PostgreSQL
+# 🐘 Local Database - MongoDB
 
 ## ❓ What is this template?
 
-**Drag-n-drop type of tool** helping you creating a local PostgreSQL database using Docker
+**Drag-n-drop type of tool** helping you creating a local MongoDB database using Docker
 
 ## 🤔 When to use this template?
 
-1. You need to quickly spin up a postgres database for local development
-2. The SRE/DevOps engineers at your workplace are too slow at provisioning, _OR_ are unable to provision you a cloud-based PostgreSQL instance (because of company policies or whatever other reason), but you need a one urgently for your current work
+1. You need to quickly spin up a MongoDB database for local development
+2. The SRE/DevOps engineers at your workplace are too slow at provisioning, _OR_ are unable to provision you a cloud-based MongoDB instance (because of company policies or whatever other reason), but you need a one urgently for your current work
 
 ## ☝️ Prerequisites
 
@@ -37,7 +37,7 @@ pnpm docker:db:create
 ## 🌐 Database URL
 
 ```shell
-postgres://admin:admin@localhost:1000
+mongodb://username:password@localhost:1111
 ```
 
-Now that you have your local PostgreSQL database up and ready, feel free to start creating tables and seeding it using any tools of your choice (Postgres clients, ORMs, raw SQL scripts, etc)
+Now that you have your local MongoDB database up and ready, feel free to start creating tables and seeding it using any tools of your choice (MongoDB clients, ORMs, etc)
