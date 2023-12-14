@@ -18,7 +18,7 @@
     "graphql-fields": "2.0.3",
     "graphql-scalars": "1.22.4",
     "neverthrow": "6.1.0",
-    "reflect-metadata": "0.1.14",
+    "reflect-metadata": "0.2.1",
     "tsc-alias": "1.8.8",
     "type-graphql": "2.0.0-beta.3",
     "typedi": "0.10.0",
