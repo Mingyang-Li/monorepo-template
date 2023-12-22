@@ -37,7 +37,7 @@ pnpm docker:db:create
 ## 🌐 Database URL
 
 ```shell
-mongodb://username:password@localhost:1111
+mongodb://username:password@localhost:1111/db?authSource=admin
 ```
 
 Now that you have your local MongoDB database up and ready, feel free to start creating tables and seeding it using any tools of your choice (MongoDB clients, ORMs, etc)
