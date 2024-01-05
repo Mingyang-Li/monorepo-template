@@ -6,7 +6,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@pulumi/pulumi": "3.0.0",
+    "@pulumi/pulumi": "3.100.0",
     "@pulumi/azure-native": "2.21.2"
   },
   "devDependencies": {
